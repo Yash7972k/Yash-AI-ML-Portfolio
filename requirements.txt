@@ -1,5 +1,14 @@
-streamlit>=1.32.0
-pandas>=2.0.0
-scikit-learn>=1.4.0
-plotly>=5.18.0
-numpy>=1.26.0
+# Core Dependencies
+streamlit==1.32.2
+pandas==2.0.3
+scikit-learn==1.4.2
+plotly==5.18.0
+numpy==1.26.4
+
+# Optional Development Dependencies (install with: pip install -r requirements-dev.txt)
+# pytest==7.4.0
+# black==23.7.0
+# flake8==6.1.0
+# jupyter==1.0.0
+# ipython==8.14.0
+
