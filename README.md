@@ -33,6 +33,44 @@ streamlit run app.py
 
 ---
 
+### 2. 📚 Student Notes Chatbot - AI Study Assistant
+**Location:** `projects/02-student-notes-chatbot/`
+
+Smart AI chatbot that helps students learn effectively by asking questions directly from their course notes using **Retrieval-Augmented Generation (RAG)**.
+
+**Features:**
+- 📤 Upload & Index PDFs - Upload course notes, textbooks, or lecture slides
+- 🤖 Smart Q&A - Ask questions and get answers grounded in YOUR notes
+- 📖 Auto-Generate Study Materials - Get important questions, topics, and definitions
+- 💬 Persistent Chat History - Continue learning where you left off
+- 🆓 100% Free - Uses Gemini free tier (no credit card needed)
+- 🏠 Local-First - All embeddings and vector store stored locally
+
+**Tech Stack:** Python, LangChain, FAISS, Google Gemini 2.0 Flash Lite, Streamlit, Sentence-Transformers, PyMuPDF
+
+**Use Cases:**
+- 🎓 Students: Generate study guides, practice questions, exam prep materials
+- 👨‍🏫 Teachers: Create interactive learning tools for courses
+- 📖 Researchers: Extract knowledge from PDF documents
+- 💼 Professionals: Learn from technical documentation
+
+**Quick Start:**
+```bash
+cd projects/02-student-notes-chatbot
+pip install -r requirements.txt
+cp .env.example .env
+# Add your Gemini API key to .env (get it from https://aistudio.google.com/app/apikey)
+streamlit run app.py
+```
+
+**Setup Instructions:**
+1. Get free Gemini API key: https://aistudio.google.com/app/apikey
+2. Copy `.env.example` to `.env` and add your key
+3. Upload PDF files through the app interface
+4. Start asking questions!
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -60,8 +98,8 @@ pip install -r requirements.txt
 ```
 Yash-AI-ML-Portfolio/
 ├── projects/
-│   ├── 01-customer-churn-prediction/    ⭐ Main project
-│   ├── 02-your-next-project/
+│   ├── 01-customer-churn-prediction/    ⭐ Machine Learning
+│   ├── 02-student-notes-chatbot/        ⭐ RAG & AI
 │   └── 03-future-project/
 ├── README.md                             (this file)
 ├── LICENSE
@@ -81,8 +119,10 @@ Each project includes:
 
 - **Machine Learning:** Classification, Feature Engineering, Model Evaluation
 - **Data Processing:** Pandas, NumPy, Data Cleaning, Preprocessing
+- **AI/LLM:** RAG (Retrieval-Augmented Generation), Vector Embeddings, FAISS, Prompt Engineering
 - **Web Frameworks:** Streamlit, Flask, Django
 - **Visualization:** Plotly, Matplotlib, Seaborn
+- **Vector Search:** FAISS, Semantic Search, Embeddings
 - **Best Practices:** Clean code, documentation, version control
 - **Production:** Model persistence, error handling, scalability
 
@@ -93,7 +133,7 @@ Each project includes:
 | Project | Status | Last Updated |
 |---------|--------|--------------|
 | 01-customer-churn-prediction | ✅ Active | 2026-06-05 |
-| 02-... | 🔄 In Progress | - |
+| 02-student-notes-chatbot | ✅ Active | 2026-06-05 |
 | 03-... | 📋 Planned | - |
 
 ---
