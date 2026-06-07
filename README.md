@@ -71,6 +71,49 @@ streamlit run app.py
 
 ---
 
+### 3. ♻️ E-Waste Management System
+**Location:** `projects/03-ewaste-management-system/`
+
+Comprehensive web-based platform for managing electronic waste collection, recycling tracking, and environmental impact measurement with full user authentication and analytics dashboard.
+
+**Features:**
+- 👤 Secure User Authentication (JWT + Argon2 hashing)
+- 📝 E-waste Submission Form with validation (name, phone, email, item type, quantity, condition, collection point)
+- 🗺️ Collection Points Management (5+ pre-seeded centers with geolocation)
+- 📊 Dashboard Analytics (total submissions, CO₂ saved, recycling value, weight metrics)
+- 🌍 Environmental Impact Calculation (CO₂ savings, tree equivalents, recycling value)
+- 💾 Persistent Database (SQLAlchemy ORM with SQLite/PostgreSQL support)
+- 🔒 Role-Based Access Control (User & Admin roles)
+- ✅ Complete Test Suite (unit & integration tests)
+- 🐳 Docker Support (containerized deployment)
+
+**Tech Stack:** Python, FastAPI, Streamlit, SQLAlchemy, JWT, Argon2, SQLite/PostgreSQL
+
+**Environmental Impact:**
+- Tracks CO₂ savings per item type
+- Calculates recycling value in USD
+- Estimates weight reduction
+- Tree absorption equivalents
+
+**Quick Start:**
+```bash
+cd projects/03-ewaste-management-system
+pip install -r requirements.txt
+# Terminal 1: Start API
+uvicorn main:app --reload
+# Terminal 2: Start UI
+streamlit run app.py
+```
+
+**API Endpoints:**
+- `/register` - User registration
+- `/login` - User authentication
+- `/submissions` - Create & view e-waste submissions
+- `/analytics` - Get dashboard metrics
+- `/collection-points` - List recycling centers
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -98,10 +141,10 @@ pip install -r requirements.txt
 ```
 Yash-AI-ML-Portfolio/
 ├── projects/
-│   ├── 01-customer-churn-prediction/    ⭐ Machine Learning
-│   ├── 02-student-notes-chatbot/        ⭐ RAG & AI
-│   └── 03-future-project/
-├── README.md                             (this file)
+│   ├── 01-customer-churn-prediction/         ⭐ Machine Learning
+│   ├── 02-student-notes-chatbot/             ⭐ RAG & AI
+│   └── 03-ewaste-management-system/          ⭐ Full-Stack Web App
+├── README.md                                  (this file)
 ├── LICENSE
 └── .gitignore
 ```
@@ -134,7 +177,7 @@ Each project includes:
 |---------|--------|--------------|
 | 01-customer-churn-prediction | ✅ Active | 2026-06-05 |
 | 02-student-notes-chatbot | ✅ Active | 2026-06-05 |
-| 03-... | 📋 Planned | - |
+| 03-ewaste-management-system | ✅ Active | 2026-06-07 |
 
 ---
 
